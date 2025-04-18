@@ -41,7 +41,6 @@ We explored the impact of:
 
 We ran a multiple linear regression using monthly aggregated data over 3 years. Doctor promotions (including with a 1-month lag) and online ads showed no significant predictive power. The model explained only 17% of the variation in sales.
 
-```text
 R-squared: 0.17
 Adjusted R-squared: 0.065
 P-values: None < 0.05
