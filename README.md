@@ -29,7 +29,7 @@ We explored the impact of:
 - Competitor Pricing
 
 ### 📊 Marketing Spend vs Sales
-![Marketing Spend vs Sales](marketing_vs_sales.png)
+![Image](https://github.com/user-attachments/assets/7cc0c7c1-51d5-40a7-8f38-9a8bfed7136d)
 
 ### 📊 Discount vs Sales
 ![Discount vs Sales](discount_vs_sales.png)
