@@ -1,16 +1,16 @@
-# 💊 Demand Forecasting for AntiAllergyZ
+#  Demand Forecasting for AntiAllergyZ
 
 This project presents an end-to-end analysis and time series forecasting model for **AntiAllergyZ**, a pharmaceutical eye-drop product. We investigate sales trends, identify demand drivers, and build a SARIMA model to forecast future demand with confidence.
 
 ---
 
-## 📦 Objective
+##  Objective
 
 To analyze historical sales data of AntiAllergyZ in the North region, explore potential drivers of demand such as marketing spend, discounts, doctor promotions, and weather, and build a reliable model to forecast future sales.
 
 ---
 
-## 📈 1. Sales Trends & Seasonality
+##  1. Sales Trends & Seasonality
 
 Sales have grown steadily from 2022 to 2025, rising from under 1,000 to over 8,000 units per month. Clear seasonal spikes are present, with sharp peaks followed by dips, often aligning with known allergy periods.
 
@@ -18,7 +18,7 @@ Sales have grown steadily from 2022 to 2025, rising from under 1,000 to over 8,0
 
 ---
 
-## 🧠 2. Investigating Demand Drivers
+##  2. Investigating Demand Drivers
 
 We explored the impact of:
 - Marketing Spend
@@ -28,16 +28,16 @@ We explored the impact of:
 - Temperature & Humidity
 - Competitor Pricing
 
-### 📊 Marketing Spend vs Sales
+###  Marketing Spend vs Sales
 ![Image](https://github.com/user-attachments/assets/7cc0c7c1-51d5-40a7-8f38-9a8bfed7136d)
 
-### 📊 Discount vs Sales
+###  Discount vs Sales
 ![Image](https://github.com/user-attachments/assets/f4082ce4-5632-42d0-a499-df3460b9d208)
 
 **Key Insight**: Marketing spend and discounts occasionally align with spikes in sales, but most variables showed weak or statistically insignificant relationships.
 
 
-## 🧪 3. Regression Analysis
+##  3. Regression Analysis
 
 We ran a multiple linear regression using monthly aggregated data over 3 years. Doctor promotions (including with a 1-month lag) and online ads showed no significant predictive power. The model explained only 17% of the variation in sales.
 
@@ -46,7 +46,7 @@ Adjusted R-squared: 0.065
 P-values: None < 0.05
 Conclusion: No strong statistical relationship found
 
-# 💊 AntiAllergyZ Demand Forecasting
+#  AntiAllergyZ Demand Forecasting
 
 This project presents an end-to-end demand forecasting solution for **AntiAllergyZ**, a pharmaceutical eye-drop product. The analysis includes trend exploration, regression testing of promotional drivers, and a SARIMA time series model to forecast future demand.
 
@@ -57,13 +57,13 @@ Adjusted R-squared: 0.065
 P-values: None < 0.05  
 Conclusion: No strong statistical relationship found
 
-# 💊 AntiAllergyZ Demand Forecasting
+#  AntiAllergyZ Demand Forecasting
 
 This project presents an end-to-end demand forecasting solution for **AntiAllergyZ**, a pharmaceutical eye-drop product. The analysis includes trend exploration, regression testing of promotional drivers, and a SARIMA time series model to forecast future demand.
 
 ---
 
-## 📉 4. SARIMA Forecasting
+##  4. SARIMA Forecasting
 
 Using **SARIMA(1,1,1)(1,1,1,12)**, we built a seasonal time series model to forecast the next 3 months of sales.
 
@@ -76,14 +76,14 @@ Using **SARIMA(1,1,1)(1,1,1,12)**, we built a seasonal time series model to fore
 
 ---
 
-## 📎 5. Model Diagnostics
+##  5. Model Diagnostics
 
 ### 📉 Residuals from SARIMA  
 Residuals appear randomly distributed with no autocorrelation.
 
 ![Image](https://github.com/user-attachments/assets/583dcc32-25c4-4a12-917e-2339d4211cf0)
 
-### 🌀 ACF & PACF Plots  
+###  ACF & PACF Plots  
 These plots helped validate lag choices and confirm seasonality in the SARIMA model.
 
 ![Image](https://github.com/user-attachments/assets/c37ae1bd-8c0b-46ef-96a0-b5d5ddddbce1)
@@ -99,7 +99,7 @@ These plots helped validate lag choices and confirm seasonality in the SARIMA mo
 
 ---
 
-## 🛠️ Tools & Technologies
+## 🛠 Tools & Technologies
 
 - **Python**: `pandas`, `matplotlib`, `statsmodels`
 - **Modeling**: SARIMA time series forecasting
@@ -107,6 +107,5 @@ These plots helped validate lag choices and confirm seasonality in the SARIMA mo
 
 ---
 
-## 📂 File Structure
 
 
