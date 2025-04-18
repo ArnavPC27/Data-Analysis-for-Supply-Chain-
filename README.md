@@ -36,7 +36,6 @@ We explored the impact of:
 
 **Key Insight**: Marketing spend and discounts occasionally align with spikes in sales, but most variables showed weak or statistically insignificant relationships.
 
----
 
 ## 🧪 3. Regression Analysis
 
