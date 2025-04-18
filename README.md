@@ -1,14 +1,14 @@
 # Data-Analysis-for-Supply-Chain-
 
-# 📊 AntiAllergyZ Demand Forecasting Project
+# AntiAllergyZ Demand Forecasting Project
 
 This repository contains a complete end-to-end demand forecasting project for the pharmaceutical product **AntiAllergyZ**, focusing on monthly sales data from 2020 to 2025.
 
-## 🔍 Project Overview
+##  Project Overview
 
 The goal of this project is to understand historical sales patterns and build a reliable time series forecasting model using SARIMA. The analysis focuses on one product-region pair: **AntiAllergyZ – North**.
 
-## ✅ Key Components
+##  Key Components
 
 - **Data Preparation**: Daily sales, promotions, competitor pricing, and weather variables were aggregated to monthly format.
 - **Trend & Seasonality Analysis**: Clear upward trend with visible seasonal spikes, particularly during allergy-prone months.
@@ -17,7 +17,7 @@ The goal of this project is to understand historical sales patterns and build a 
 - **Forecasting**: 3-month sales forecast was generated with confidence intervals.
 - **Drivers of Demand**: Exploratory analysis on the impact of Marketing Spend, Discounts, Doctor Promotions, Online Ads, Temperature, and Humidity.
 
-## 📈 Insights
+##  Insights
 
 - **Sales have grown significantly** from 2022 to 2025, with peaks exceeding 8,000 units per month.
 - **Sharp sales spikes** were observed, likely triggered by promotions, doctor campaigns, or seasonal allergy cycles.
@@ -25,7 +25,7 @@ The goal of this project is to understand historical sales patterns and build a 
 - **Competitor pricing** had a moderate negative correlation, possibly due to shared seasonality rather than direct influence.
 - **Marketing Spend and Discounts** are stronger contributors to demand, though results vary by timing and region.
 
-## 🔮 Forecast Summary
+##  Forecast Summary
 
 The SARIMA model predicted stable demand over the next 3 months, with the following sales estimates:
 
@@ -33,14 +33,14 @@ The SARIMA model predicted stable demand over the next 3 months, with the follow
 - **August 2025**: ~1,989 units  
 - **September 2025**: ~1,738 units  
 
-## 📁 Files Included
+##  Files Included
 
 - `notebook.ipynb` – Full modeling workflow with visualizations
 - `data.csv` – Cleaned monthly dataset
 - `forecast_plot.png` – 3-month forecast visualization
 - `README.md` – Project summary and interpretation
 
-## 🚀 How to Use
+##  How to Use
 
 1. Clone the repository  
 2. Install required Python libraries  
