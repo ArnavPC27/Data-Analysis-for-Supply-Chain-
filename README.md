@@ -53,11 +53,22 @@ This project presents an end-to-end demand forecasting solution for **AntiAllerg
 
 ---
 
+R-squared: 0.17  
+Adjusted R-squared: 0.065  
+P-values: None < 0.05  
+Conclusion: No strong statistical relationship found
+
+# 💊 AntiAllergyZ Demand Forecasting
+
+This project presents an end-to-end demand forecasting solution for **AntiAllergyZ**, a pharmaceutical eye-drop product. The analysis includes trend exploration, regression testing of promotional drivers, and a SARIMA time series model to forecast future demand.
+
+---
+
 ## 📉 4. SARIMA Forecasting
 
 Using **SARIMA(1,1,1)(1,1,1,12)**, we built a seasonal time series model to forecast the next 3 months of sales.
 
-![Image](https://github.com/user-attachments/assets/ba27461e-e978-46e0-a773-f509f3cb1e0e)
+![Sales Forecast](sales_forecast.png)
 
 ### Forecasted Sales:
 - **July 2025**: ~1,930 units  
@@ -71,12 +82,12 @@ Using **SARIMA(1,1,1)(1,1,1,12)**, we built a seasonal time series model to fore
 ### 📉 Residuals from SARIMA  
 Residuals appear randomly distributed with no autocorrelation.
 
-![Image](https://github.com/user-attachments/assets/e053b194-073c-46b7-a50c-ae2007a69ebc)
+![SARIMA Residuals](sarima_residuals.png)
 
 ### 🌀 ACF & PACF Plots  
 These plots helped validate lag choices and confirm seasonality in the SARIMA model.
 
-![Image](https://github.com/user-attachments/assets/c37ae1bd-8c0b-46ef-96a0-b5d5ddddbce1)
+![ACF and PACF](acf_pacf.png)
 
 ---
 
@@ -98,4 +109,5 @@ These plots helped validate lag choices and confirm seasonality in the SARIMA mo
 ---
 
 ## 📂 File Structure
+
 
