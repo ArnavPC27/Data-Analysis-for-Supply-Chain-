@@ -67,7 +67,7 @@ This project presents an end-to-end demand forecasting solution for **AntiAllerg
 
 Using **SARIMA(1,1,1)(1,1,1,12)**, we built a seasonal time series model to forecast the next 3 months of sales.
 
-![Sales Forecast](sales_forecast.png)
+![Image](https://github.com/user-attachments/assets/698119fa-801d-4e4c-a7fe-fb55b682839b)
 
 ### Forecasted Sales:
 - **July 2025**: ~1,930 units  
@@ -81,12 +81,12 @@ Using **SARIMA(1,1,1)(1,1,1,12)**, we built a seasonal time series model to fore
 ### 📉 Residuals from SARIMA  
 Residuals appear randomly distributed with no autocorrelation.
 
-![SARIMA Residuals](sarima_residuals.png)
+![Image](https://github.com/user-attachments/assets/583dcc32-25c4-4a12-917e-2339d4211cf0)
 
 ### 🌀 ACF & PACF Plots  
 These plots helped validate lag choices and confirm seasonality in the SARIMA model.
 
-![ACF and PACF](acf_pacf.png)
+![Image](https://github.com/user-attachments/assets/c37ae1bd-8c0b-46ef-96a0-b5d5ddddbce1)
 
 ---
 
