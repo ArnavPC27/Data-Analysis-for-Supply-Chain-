@@ -78,7 +78,7 @@ Using **SARIMA(1,1,1)(1,1,1,12)**, we built a seasonal time series model to fore
 
 ##  5. Model Diagnostics
 
-### 📉 Residuals from SARIMA  
+###  Residuals from SARIMA  
 Residuals appear randomly distributed with no autocorrelation.
 
 ![Image](https://github.com/user-attachments/assets/583dcc32-25c4-4a12-917e-2339d4211cf0)
@@ -90,7 +90,7 @@ These plots helped validate lag choices and confirm seasonality in the SARIMA mo
 
 ---
 
-## 📌 Final Takeaways
+##  Final Takeaways
 
 - Sales are primarily influenced by **seasonal cycles** and **real-time need**.
 - **Marketing**, **discounts**, and **doctor promotions** showed inconsistent influence.
@@ -99,7 +99,7 @@ These plots helped validate lag choices and confirm seasonality in the SARIMA mo
 
 ---
 
-## 🛠 Tools & Technologies
+##  Tools & Technologies
 
 - **Python**: `pandas`, `matplotlib`, `statsmodels`
 - **Modeling**: SARIMA time series forecasting
