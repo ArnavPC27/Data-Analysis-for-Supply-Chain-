@@ -1,54 +1,102 @@
-# Data-Analysis-for-Supply-Chain-
+# 💊 Demand Forecasting for AntiAllergyZ
 
-# AntiAllergyZ Demand Forecasting Project
+This project presents an end-to-end analysis and time series forecasting model for **AntiAllergyZ**, a pharmaceutical eye-drop product. We investigate sales trends, identify demand drivers, and build a SARIMA model to forecast future demand with confidence.
 
-This repository contains a complete end-to-end demand forecasting project for the pharmaceutical product **AntiAllergyZ**, focusing on monthly sales data from 2020 to 2025.
+---
 
-##  Project Overview
+## 📦 Objective
 
-The goal of this project is to understand historical sales patterns and build a reliable time series forecasting model using SARIMA. The analysis focuses on one product-region pair: **AntiAllergyZ – North**.
+To analyze historical sales data of AntiAllergyZ in the North region, explore potential drivers of demand such as marketing spend, discounts, doctor promotions, and weather, and build a reliable model to forecast future sales.
 
-##  Key Components
+---
 
-- **Data Preparation**: Daily sales, promotions, competitor pricing, and weather variables were aggregated to monthly format.
-- **Trend & Seasonality Analysis**: Clear upward trend with visible seasonal spikes, particularly during allergy-prone months.
-- **Stationarity Testing**: ADF test confirmed the need for first differencing to stabilize the series.
-- **Modeling**: A SARIMA(1,1,1)(1,1,1,12) model was fitted and evaluated.
-- **Forecasting**: 3-month sales forecast was generated with confidence intervals.
-- **Drivers of Demand**: Exploratory analysis on the impact of Marketing Spend, Discounts, Doctor Promotions, Online Ads, Temperature, and Humidity.
+## 📈 1. Sales Trends & Seasonality
 
-##  Insights
+Sales have grown steadily from 2022 to 2025, rising from under 1,000 to over 8,000 units per month. Clear seasonal spikes are present, with sharp peaks followed by dips, often aligning with known allergy periods.
 
-- **Sales have grown significantly** from 2022 to 2025, with peaks exceeding 8,000 units per month.
-- ![Image](https://github.com/user-attachments/assets/d37379ac-8f15-41f7-b7b8-9fcf76a9774f)
-- **Sharp sales spikes** were observed, likely triggered by promotions, doctor campaigns, or seasonal allergy cycles.
-- **Online Ads and Weather** (Temperature, Humidity) showed weak correlation with sales.
-- **Competitor pricing** had a moderate negative correlation, possibly due to shared seasonality rather than direct influence.
-- **Marketing Spend and Discounts** are stronger contributors to demand, though results vary by timing and region.
+![Monthly Sales Trend](monthly_sales_trend.png)
 
-##  Forecast Summary
+---
 
-The SARIMA model predicted stable demand over the next 3 months, with the following sales estimates:
+## 🧠 2. Investigating Demand Drivers
 
+We explored the impact of:
+- Marketing Spend
+- Discounts
+- Online Ads
+- Doctor Promotions (including 1-month lag)
+- Temperature & Humidity
+- Competitor Pricing
+
+### 📊 Marketing Spend vs Sales
+![Marketing Spend vs Sales](marketing_vs_sales.png)
+
+### 📊 Discount vs Sales
+![Discount vs Sales](discount_vs_sales.png)
+
+**Key Insight**: Marketing spend and discounts occasionally align with spikes in sales, but most variables showed weak or statistically insignificant relationships.
+
+---
+
+## 🧪 3. Regression Analysis
+
+We ran a multiple linear regression using monthly aggregated data over 3 years. Doctor promotions (including with a 1-month lag) and online ads showed no significant predictive power. The model explained only 17% of the variation in sales.
+
+```text
+R-squared: 0.17
+Adjusted R-squared: 0.065
+P-values: None < 0.05
+Conclusion: No strong statistical relationship found
+
+# 💊 AntiAllergyZ Demand Forecasting
+
+This project presents an end-to-end demand forecasting solution for **AntiAllergyZ**, a pharmaceutical eye-drop product. The analysis includes trend exploration, regression testing of promotional drivers, and a SARIMA time series model to forecast future demand.
+
+---
+
+## 📉 4. SARIMA Forecasting
+
+Using **SARIMA(1,1,1)(1,1,1,12)**, we built a seasonal time series model to forecast the next 3 months of sales.
+
+![Sales Forecast](sales_forecast.png)
+
+### Forecasted Sales:
 - **July 2025**: ~1,930 units  
 - **August 2025**: ~1,989 units  
 - **September 2025**: ~1,738 units  
 
-##  Files Included
+---
 
-- `notebook.ipynb` – Full modeling workflow with visualizations
-- `data.csv` – Cleaned monthly dataset
-- `forecast_plot.png` – 3-month forecast visualization
-- `README.md` – Project summary and interpretation
+## 📎 5. Model Diagnostics
 
-##  How to Use
+### 📉 Residuals from SARIMA  
+Residuals appear randomly distributed with no autocorrelation.
 
-1. Clone the repository  
-2. Install required Python libraries  
-3. Run the notebook step by step to reproduce the analysis and forecast  
-4. Adjust model parameters or time ranges as needed
+![SARIMA Residuals](sarima_residuals.png)
+
+### 🌀 ACF & PACF Plots  
+These plots helped validate lag choices and confirm seasonality in the SARIMA model.
+
+![ACF and PACF](acf_pacf.png)
 
 ---
 
-Feel free to fork this project or reach out with questions or suggestions!
+## 📌 Final Takeaways
+
+- Sales are primarily influenced by **seasonal cycles** and **real-time need**.
+- **Marketing**, **discounts**, and **doctor promotions** showed inconsistent influence.
+- **Online ads**, **weather**, and **competitor pricing** had minimal or no correlation.
+- The SARIMA model offers a **stable short-term forecast** and effectively captures the product’s cyclical nature.
+
+---
+
+## 🛠️ Tools & Technologies
+
+- **Python**: `pandas`, `matplotlib`, `statsmodels`
+- **Modeling**: SARIMA time series forecasting
+- **Other techniques**: Data Aggregation, Regression Analysis, Residual Diagnostics
+
+---
+
+## 📂 File Structure
 
