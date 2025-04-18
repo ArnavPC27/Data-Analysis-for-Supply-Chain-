@@ -20,6 +20,7 @@ The goal of this project is to understand historical sales patterns and build a 
 ##  Insights
 
 - **Sales have grown significantly** from 2022 to 2025, with peaks exceeding 8,000 units per month.
+- ![Image](https://github.com/user-attachments/assets/d37379ac-8f15-41f7-b7b8-9fcf76a9774f)
 - **Sharp sales spikes** were observed, likely triggered by promotions, doctor campaigns, or seasonal allergy cycles.
 - **Online Ads and Weather** (Temperature, Humidity) showed weak correlation with sales.
 - **Competitor pricing** had a moderate negative correlation, possibly due to shared seasonality rather than direct influence.
