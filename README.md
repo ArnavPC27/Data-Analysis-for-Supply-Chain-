@@ -32,7 +32,7 @@ We explored the impact of:
 ![Image](https://github.com/user-attachments/assets/7cc0c7c1-51d5-40a7-8f38-9a8bfed7136d)
 
 ### 📊 Discount vs Sales
-![Discount vs Sales](discount_vs_sales.png)
+![Image](https://github.com/user-attachments/assets/f4082ce4-5632-42d0-a499-df3460b9d208)
 
 **Key Insight**: Marketing spend and discounts occasionally align with spikes in sales, but most variables showed weak or statistically insignificant relationships.
 
@@ -58,7 +58,7 @@ This project presents an end-to-end demand forecasting solution for **AntiAllerg
 
 Using **SARIMA(1,1,1)(1,1,1,12)**, we built a seasonal time series model to forecast the next 3 months of sales.
 
-![Sales Forecast](sales_forecast.png)
+![Image](https://github.com/user-attachments/assets/ba27461e-e978-46e0-a773-f509f3cb1e0e)
 
 ### Forecasted Sales:
 - **July 2025**: ~1,930 units  
@@ -72,12 +72,12 @@ Using **SARIMA(1,1,1)(1,1,1,12)**, we built a seasonal time series model to fore
 ### 📉 Residuals from SARIMA  
 Residuals appear randomly distributed with no autocorrelation.
 
-![SARIMA Residuals](sarima_residuals.png)
+![Image](https://github.com/user-attachments/assets/e053b194-073c-46b7-a50c-ae2007a69ebc)
 
 ### 🌀 ACF & PACF Plots  
 These plots helped validate lag choices and confirm seasonality in the SARIMA model.
 
-![ACF and PACF](acf_pacf.png)
+![Image](https://github.com/user-attachments/assets/c37ae1bd-8c0b-46ef-96a0-b5d5ddddbce1)
 
 ---
 
