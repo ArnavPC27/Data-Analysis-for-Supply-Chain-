@@ -12,7 +12,7 @@ To analyze historical sales data of AntiAllergyZ in the North region, explore po
 
 ##  1. Sales Trends & Seasonality
 
-Sales have grown steadily from 2022 to 2025, rising from under 1,000 to over 8,000 units per month. Clear seasonal spikes are present, with sharp peaks followed by dips, often aligning with known allergy periods.
+Sales have grown steadily from 2020 to 2025, rising from under 1,000 to over 8,000 units per month. Clear seasonal spikes are present, with sharp peaks followed by dips, often aligning with known allergy periods.
 
 ![Image](https://github.com/user-attachments/assets/d37379ac-8f15-41f7-b7b8-9fcf76a9774f)
 
