@@ -1,6 +1,6 @@
 #  Demand Forecasting for AntiAllergyZ
 
-This project presents an end-to-end analysis and time series forecasting model for **AntiAllergyZ**, a pharmaceutical eye-drop product. We investigate sales trends, identify demand drivers, and build a SARIMA model to forecast future demand with confidence.
+This project presents an end-to-end analysis and time series forecasting model for **AntiAllergyZ**, a pharmaceutical eye-drop product. I investigate sales trends, identify demand drivers, and build a SARIMA model to forecast future demand with confidence.
 
 ---
 
@@ -20,7 +20,7 @@ Sales have grown steadily from 2020 to 2025, rising from under 1,000 to over 8,0
 
 ##  2. Investigating Demand Drivers
 
-We explored the impact of:
+I explored the impact of:
 - Marketing Spend
 - Discounts
 - Online Ads
@@ -39,7 +39,7 @@ We explored the impact of:
 
 ##  3. Regression Analysis
 
-We ran a multiple linear regression using monthly aggregated data over 3 years. Doctor promotions (including with a 1-month lag) and online ads showed no significant predictive power. The model explained only 17% of the variation in sales.
+I ran a multiple linear regression using monthly aggregated data over 3 years. Doctor promotions (including with a 1-month lag) and online ads showed no significant predictive power. The model explained only 17% of the variation in sales.
 
 R-squared: 0.17
 Adjusted R-squared: 0.065
@@ -65,7 +65,7 @@ This project presents an end-to-end demand forecasting solution for **AntiAllerg
 
 ##  4. SARIMA Forecasting
 
-Using **SARIMA(1,1,1)(1,1,1,12)**, we built a seasonal time series model to forecast the next 3 months of sales.
+Using **SARIMA(1,1,1)(1,1,1,12)**, I built a seasonal time series model to forecast the next 3 months of sales.
 
 ![Image](https://github.com/user-attachments/assets/698119fa-801d-4e4c-a7fe-fb55b682839b)
 
